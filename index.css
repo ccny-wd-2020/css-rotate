@@ -1,0 +1,11 @@
+img {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+img:hover {
+    /* duration of spin */
+    animation:spin 3s linear infinite;
+}
+/* length/direction of spin */
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
