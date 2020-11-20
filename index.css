@@ -1,0 +1,19 @@
+img {
+    animation:counterClockwise 6s linear;
+}
+img:hover {
+    /* duration of spin */
+    animation:clockwise 4s ease-in-out infinite;
+}
+/* length/direction of spin */
+@keyframes counterClockwise {
+  100% {
+    transform:rotate(-720deg);
+  }
+}
+
+@keyframes clockwise {
+  100% {
+    transform:rotate(720deg);
+  }
+}
